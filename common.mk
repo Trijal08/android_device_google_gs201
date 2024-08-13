@@ -436,6 +436,9 @@ endif
 # Touch
 include hardware/google/pixel/touch/device.mk
 
+# UDFPS
+TARGET_HAS_UDFPS := true
+
 # VINTF
 DEVICE_MANIFEST_FILE += \
     device/google/gs201/vintf/manifest.xml
