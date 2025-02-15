@@ -498,3 +498,6 @@ PRODUCT_COPY_FILES += \
     device/google/gs201/configs/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
     device/google/gs201/configs/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml \
     device/google/gs201/configs/axion/init.axion.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.axion.rc
+
+# Include some extras if they exist
+-include device/google/zumapro/extras.mk
