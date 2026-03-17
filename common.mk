@@ -343,9 +343,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-V2-ndk.vendor:64
 endif
 
-# Google Face Unlock
-$(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
-
 # Pixel Camera
 $(call inherit-product-if-exists, vendor/google/camera/camera.mk)
 
