@@ -377,9 +377,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-V2-ndk.vendor:64
 endif
 
-# Pixel Camera
-$(call inherit-product-if-exists, vendor/google/camera/camera.mk)
-
 # DeviceAsWebcam
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
