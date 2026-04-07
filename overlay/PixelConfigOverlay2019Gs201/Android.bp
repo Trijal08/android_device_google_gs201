@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "GlanceableHubSysuiConfigOverlay",
+    name: "PixelConfigOverlay2019Gs201",
     product_specific: true,
 }
