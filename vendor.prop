@@ -44,7 +44,7 @@ ro.crypto.metadata_init_delete_all_keys.enabled=true
 ro.frp.pst=/dev/block/by-name/frp
 
 # Graphics
-graphics.gpu.profiler.support=true
+graphics.gpu.profiler.support=false
 ro.egl.blobcache.multifile=true
 ro.egl.blobcache.multifile_limit=33554432
 ro.hardware.egl=mali
