@@ -1,0 +1,13 @@
+allow system_server sysfs_fabric:dir search;
+allow system_server sysfs_fabric:file rw_file_perms;
+
+allow system_server proc_vendor_sched:dir search;
+allow system_server proc_vendor_sched:file rw_file_perms;
+
+allow system_server sysfs_display:dir search;
+allow system_server sysfs_display:file rw_file_perms;
+
+allow system_server latency_device:chr_file rw_file_perms;
+
+allow system_server sysfs_cpu:dir search;
+allow system_server sysfs_cpu:file rw_file_perms;

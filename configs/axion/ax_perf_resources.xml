@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <resource id="0x0001" name="cpu_down_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/down_rate_limit_us" default="0" />
+  <resource id="0x0002" name="cpu_down_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/down_rate_limit_us" default="0" />
+  <resource id="0x0003" name="cpu_down_rate_limit_c2" path="/sys/devices/system/cpu/cpu6/cpufreq/sched_pixel/down_rate_limit_us" default="0" />
+  <resource id="0x0004" name="cpu_dvfs_headroom" path="/proc/vendor_sched/dvfs_headroom" default="0" />
+  <resource id="0x0005" name="cpu_tapered_dvfs_headroom" path="/proc/vendor_sched/tapered_dvfs_headroom_enable" default="0" />
+  <resource id="0x0006" name="cpu_util_threshold" path="/proc/vendor_sched/util_threshold" default="0" />
+  <resource id="0x0007" name="display_hw_early_wakeup" path="/sys/devices/platform/1c240000.drmdecon/early_wakeup" default="0" />
+  <resource id="0x0008" name="dram_min_freq" path="/sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq" default="0" />
+  <resource id="0x0009" name="gpu_boost" path="/sys/devices/platform/28000000.mali/hint_min_freq" default="0" />
+  <resource id="0x000a" name="gpu_min_freq" path="/sys/devices/platform/28000000.mali/hint_min_freq" default="0" />
+  <resource id="0x000b" name="int_min_freq" path="/sys/devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/min_freq" default="0" />
+  <resource id="0x000c" name="mali_max_freq" path="/sys/devices/platform/28000000.mali/devfreq/28000000.mali/max_freq" default="0" />
+  <resource id="0x000d" name="mali_min_freq" path="/sys/devices/platform/28000000.mali/devfreq/28000000.mali/min_freq" default="0" />
+  <resource id="0x000e" name="pmqos_cpu_dma_latency" path="/dev/cpu_dma_latency" default="1000000" />
+  <resource id="0x000f" name="uclamp_fg_lat" path="/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive" default="0" />
+  <resource id="0x0010" name="uclamp_fg_max" path="/dev/cpuctl/foreground/cpu.uclamp.max" default="100" />
+  <resource id="0x0011" name="uclamp_fg_min" path="/dev/cpuctl/foreground/cpu.uclamp.min" default="0" />
+  <resource id="0x0012" name="uclamp_top_lat" path="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive" default="0" />
+  <resource id="0x0013" name="uclamp_top_max" path="/dev/cpuctl/top-app/cpu.uclamp.max" default="0" />
+  <resource id="0x0014" name="uclamp_top_min" path="/dev/cpuctl/top-app/cpu.uclamp.min" default="0" />
+  <resource id="0x0015" name="vendor_sched_fg_uclamp" path="/proc/vendor_sched/groups/fg/uclamp_min" default="0" />
+  <resource id="0x0016" name="vendor_sched_reduce_prefer_idle" path="/proc/vendor_sched/reduce_prefer_idle" default="0" />
+  <resource id="0x0017" name="vendor_sched_ta_uclamp" path="/proc/vendor_sched/groups/ta/uclamp_min" default="0" />
+  <resource id="0x0099" name="cpuset_h_bg_cpus" path="/dev/cpuset/h-background/cpus" default="0-2" />
+  <resource id="0x009a" name="cpuset_ax_fg_cpus" path="/dev/cpuset/ax_foreground/cpus" default="0-5" />
+  <resource id="0x009b" name="cpuset_dex2oat_cpus" path="/dev/cpuset/dex2oat/cpus" default="0-2" />
+</resources>

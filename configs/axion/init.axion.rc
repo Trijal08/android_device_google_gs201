@@ -1,0 +1,33 @@
+on early-init
+    write /dev/cpuctl/foreground/cpu.uclamp.max max
+    write /dev/cpuctl/top-app/cpu.uclamp.max max
+
+on init
+    chmod 0664 /dev/cpu_dma_latency
+
+on post-fs-data
+    chown system system /proc/vendor_sched/dvfs_headroom
+    chown system system /proc/vendor_sched/util_threshold
+    chown system system /proc/vendor_sched/tapered_dvfs_headroom_enable
+    chown system system /proc/vendor_sched/reduce_prefer_idle
+    chown system system /proc/vendor_sched/groups/ta/uclamp_min
+    chown system system /proc/vendor_sched/groups/fg/uclamp_min
+    chmod 0664 /proc/vendor_sched/dvfs_headroom
+    chmod 0664 /proc/vendor_sched/util_threshold
+    chmod 0664 /proc/vendor_sched/tapered_dvfs_headroom_enable
+    chmod 0664 /proc/vendor_sched/reduce_prefer_idle
+    chmod 0664 /proc/vendor_sched/groups/ta/uclamp_min
+    chmod 0664 /proc/vendor_sched/groups/fg/uclamp_min
+
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/down_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/down_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu6/cpufreq/sched_pixel/down_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/down_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/down_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu6/cpufreq/sched_pixel/down_rate_limit_us
+
+    chown system system /sys/devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/min_freq
+    chmod 0664 /sys/devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/min_freq
+
+    chown system system /sys/devices/platform/1c240000.drmdecon/early_wakeup
+    chmod 0664 /sys/devices/platform/1c240000.drmdecon/early_wakeup
