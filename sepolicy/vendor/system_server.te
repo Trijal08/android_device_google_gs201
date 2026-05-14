@@ -11,3 +11,5 @@ allow system_server latency_device:chr_file rw_file_perms;
 
 allow system_server sysfs_cpu:dir search;
 allow system_server sysfs_cpu:file rw_file_perms;
+allow system_server sysfs_devices_system_cpu:dir search;
+allow system_server sysfs_devices_system_cpu:file rw_file_perms;

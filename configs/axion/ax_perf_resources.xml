@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <resource id="0x0001" name="cpu_down_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/down_rate_limit_us" default="0" />
-  <resource id="0x0002" name="cpu_down_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/down_rate_limit_us" default="0" />
-  <resource id="0x0003" name="cpu_down_rate_limit_c2" path="/sys/devices/system/cpu/cpu6/cpufreq/sched_pixel/down_rate_limit_us" default="0" />
+  <resource id="0x0001" name="cpu_down_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/down_rate_limit_us" default="2000" />
+  <resource id="0x0002" name="cpu_down_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/down_rate_limit_us" default="2000" />
+  <resource id="0x0003" name="cpu_down_rate_limit_c2" path="/sys/devices/system/cpu/cpu6/cpufreq/sched_pixel/down_rate_limit_us" default="2000" />
+  <resource id="0x0019" name="cpu_up_rate_limit_c0" path="/sys/devices/system/cpu/cpu0/cpufreq/sched_pixel/up_rate_limit_us" default="2000" />
+  <resource id="0x001a" name="cpu_up_rate_limit_c1" path="/sys/devices/system/cpu/cpu4/cpufreq/sched_pixel/up_rate_limit_us" default="2000" />
+  <resource id="0x001b" name="cpu_up_rate_limit_c2" path="/sys/devices/system/cpu/cpu6/cpufreq/sched_pixel/up_rate_limit_us" default="2000" />
   <resource id="0x0004" name="cpu_dvfs_headroom" path="/proc/vendor_sched/dvfs_headroom" default="0" />
   <resource id="0x0005" name="cpu_tapered_dvfs_headroom" path="/proc/vendor_sched/tapered_dvfs_headroom_enable" default="0" />
   <resource id="0x0006" name="cpu_util_threshold" path="/proc/vendor_sched/util_threshold" default="0" />
