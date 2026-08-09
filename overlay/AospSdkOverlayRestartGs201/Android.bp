@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSdkOverlayRestartGs201",
+    name: "AospSdkOverlayRestartGs201",
     vendor: true,
 }
