@@ -394,13 +394,13 @@ PRODUCT_PACKAGES += \
 
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
-    LineageSdkOverlayGs201 \
+    AospSdkOverlayGs201 \
     SettingsOverlayGs201
 endif
 
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayLineageGs201 \
-    LineageSdkOverlayRestartGs201 \
+    FrameworkResOverlayAospGs201 \
+    AospSdkOverlayRestartGs201 \
     SettingsOverlayBatteryGs201 \
     SimpleDeviceConfigOverlayGs201
 

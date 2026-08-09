@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSdkOverlayGs201",
-    vendor: true,
+    name: "FrameworkResOverlayAospGs201",
+    product_specific: true,
 }
